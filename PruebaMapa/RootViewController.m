@@ -7,12 +7,15 @@
 //
 
 #import "RootViewController.h"
+#import "MapViewController.h"
 
 @interface RootViewController ()
 
 @end
 
 @implementation RootViewController
+@synthesize originTextField;
+@synthesize destinationTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +34,8 @@
 
 - (void)viewDidUnload
 {
+    [self setOriginTextField:nil];
+    [self setDestinationTextField:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -38,6 +43,15 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showMap"])
+    {
+        [[segue destinationViewController] setOrigin:originTextField.text];        
+        [[segue destinationViewController] setDestination:destinationTextField.text];
+    }
 }
 
 @end

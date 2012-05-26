@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595F76B11570069900B15F23 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595F76B01570069900B15F23 /* RootViewController.m */; };
+		59C58F041565A86C00DEC390 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C58F031565A86C00DEC390 /* CoreLocation.framework */; };
 		59DE3FE81564706A00809CFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE3FE71564706A00809CFC /* UIKit.framework */; };
 		59DE3FEA1564706A00809CFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE3FE91564706A00809CFC /* Foundation.framework */; };
 		59DE3FEC1564706A00809CFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE3FEB1564706A00809CFC /* CoreGraphics.framework */; };
@@ -14,12 +16,13 @@
 		59DE3FF41564706A00809CFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DE3FF31564706A00809CFC /* main.m */; };
 		59DE3FF81564706A00809CFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DE3FF71564706A00809CFC /* AppDelegate.m */; };
 		59DE3FFB1564706A00809CFC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59DE3FF91564706A00809CFC /* MainStoryboard.storyboard */; };
-		59DE3FFE1564706A00809CFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DE3FFD1564706A00809CFC /* ViewController.m */; };
+		59DE3FFE1564706A00809CFC /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DE3FFD1564706A00809CFC /* MapViewController.m */; };
 		59DE40061564706A00809CFC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE40051564706A00809CFC /* SenTestingKit.framework */; };
 		59DE40071564706A00809CFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE3FE71564706A00809CFC /* UIKit.framework */; };
 		59DE40081564706A00809CFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE3FE91564706A00809CFC /* Foundation.framework */; };
 		59DE40101564706A00809CFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59DE400E1564706A00809CFC /* InfoPlist.strings */; };
 		59DE40131564706A00809CFC /* PruebaMapaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DE40121564706A00809CFC /* PruebaMapaTests.m */; };
+		59DE401D156474B900809CFC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59DE401C156474B900809CFC /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,25 +36,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		595F76AF1570069900B15F23 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		595F76B01570069900B15F23 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		59C58F031565A86C00DEC390 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		59DE3FE31564706A00809CFC /* PruebaMapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaMapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DE3FE71564706A00809CFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		59DE3FE91564706A00809CFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		59DE3FEB1564706A00809CFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		59DE3FEF1564706A00809CFC /* PruebaMapa-Info.plist */ = {isa = PBXFileReference; path = "PruebaMapa-Info.plist"; sourceTree = "<group>"; };
+		59DE3FEF1564706A00809CFC /* PruebaMapa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PruebaMapa-Info.plist"; sourceTree = "<group>"; };
 		59DE3FF11564706A00809CFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59DE3FF31564706A00809CFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		59DE3FF51564706A00809CFC /* PruebaMapa-Prefix.pch */ = {isa = PBXFileReference; path = "PruebaMapa-Prefix.pch"; sourceTree = "<group>"; };
-		59DE3FF61564706A00809CFC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		59DE3FF51564706A00809CFC /* PruebaMapa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PruebaMapa-Prefix.pch"; sourceTree = "<group>"; };
+		59DE3FF61564706A00809CFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59DE3FF71564706A00809CFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		59DE3FFA1564706A00809CFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		59DE3FFC1564706A00809CFC /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		59DE3FFD1564706A00809CFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		59DE3FFC1564706A00809CFC /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		59DE3FFD1564706A00809CFC /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		59DE40041564706A00809CFC /* PruebaMapaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaMapaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59DE40051564706A00809CFC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		59DE400D1564706A00809CFC /* PruebaMapaTests-Info.plist */ = {isa = PBXFileReference; path = "PruebaMapaTests-Info.plist"; sourceTree = "<group>"; };
+		59DE400D1564706A00809CFC /* PruebaMapaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PruebaMapaTests-Info.plist"; sourceTree = "<group>"; };
 		59DE400F1564706A00809CFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		59DE40111564706A00809CFC /* PruebaMapaTests.h */ = {isa = PBXFileReference; path = PruebaMapaTests.h; sourceTree = "<group>"; };
+		59DE40111564706A00809CFC /* PruebaMapaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PruebaMapaTests.h; sourceTree = "<group>"; };
 		59DE40121564706A00809CFC /* PruebaMapaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PruebaMapaTests.m; sourceTree = "<group>"; };
+		59DE401C156474B900809CFC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C58F041565A86C00DEC390 /* CoreLocation.framework in Frameworks */,
+				59DE401D156474B900809CFC /* MapKit.framework in Frameworks */,
 				59DE3FE81564706A00809CFC /* UIKit.framework in Frameworks */,
 				59DE3FEA1564706A00809CFC /* Foundation.framework in Frameworks */,
 				59DE3FEC1564706A00809CFC /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +109,8 @@
 		59DE3FE61564706A00809CFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59C58F031565A86C00DEC390 /* CoreLocation.framework */,
+				59DE401C156474B900809CFC /* MapKit.framework */,
 				59DE3FE71564706A00809CFC /* UIKit.framework */,
 				59DE3FE91564706A00809CFC /* Foundation.framework */,
 				59DE3FEB1564706A00809CFC /* CoreGraphics.framework */,
@@ -114,9 +125,11 @@
 				59DE3FF61564706A00809CFC /* AppDelegate.h */,
 				59DE3FF71564706A00809CFC /* AppDelegate.m */,
 				59DE3FF91564706A00809CFC /* MainStoryboard.storyboard */,
-				59DE3FFC1564706A00809CFC /* ViewController.h */,
-				59DE3FFD1564706A00809CFC /* ViewController.m */,
+				59DE3FFC1564706A00809CFC /* MapViewController.h */,
+				59DE3FFD1564706A00809CFC /* MapViewController.m */,
 				59DE3FEE1564706A00809CFC /* Supporting Files */,
+				595F76AF1570069900B15F23 /* RootViewController.h */,
+				595F76B01570069900B15F23 /* RootViewController.m */,
 			);
 			path = PruebaMapa;
 			sourceTree = "<group>";
@@ -259,7 +272,8 @@
 			files = (
 				59DE3FF41564706A00809CFC /* main.m in Sources */,
 				59DE3FF81564706A00809CFC /* AppDelegate.m in Sources */,
-				59DE3FFE1564706A00809CFC /* ViewController.m in Sources */,
+				59DE3FFE1564706A00809CFC /* MapViewController.m in Sources */,
+				595F76B11570069900B15F23 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +443,7 @@
 				59DE40181564706A00809CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59DE40191564706A00809CFC /* Build configuration list for PBXNativeTarget "PruebaMapaTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +452,7 @@
 				59DE401B1564706A00809CFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

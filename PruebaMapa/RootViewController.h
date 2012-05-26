@@ -10,4 +10,7 @@
 
 @interface RootViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *originTextField;
+@property (strong, nonatomic) IBOutlet UITextField *destinationTextField;
+
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Mapkit/Mapkit.h>
 
-@interface ViewController : UIViewController
+@interface MapViewController : UIViewController <MKMapViewDelegate>
+
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) MKPolyline *routeLine;
+@property (nonatomic, strong) MKPolylineView *routeLineView;
+@property (nonatomic, strong) NSString *origin;
+@property (nonatomic, strong) NSString *destination;
 
 @end
