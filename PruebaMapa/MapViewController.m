@@ -113,9 +113,11 @@
         NSLog(@"Error parsing JSON: %@", error);
         NSLog(@"_receivedData: %@", [_receivedData description]);
     } else {
-        NSDictionary *routes = [[jsonArray valueForKey:@"routes"] objectAtIndex:0];
-        NSDictionary *overviewPolyline = [routes valueForKey:@"overview_polyline"];
-        return [overviewPolyline valueForKey:@"points"];
+        if (![[jsonArray valueForKey:@"status"] isEqualToString:@"ZERO_RESULTS"]) {
+            NSDictionary *routes = [[jsonArray valueForKey:@"routes"] objectAtIndex:0];
+            NSDictionary *overviewPolyline = [routes valueForKey:@"overview_polyline"];
+            return [overviewPolyline valueForKey:@"points"];
+        }            
     }
     
     return nil;
